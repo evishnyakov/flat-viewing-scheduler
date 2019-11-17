@@ -1,0 +1,38 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST http://localhost:8080/tenants
+Content-Type: application/json
+
+{"email":"email2@email.email"}
+
+### a9a4a47f-61f3-4c77-8e1d-94d2e46b6d8d
+
+POST http://localhost:8080/flats
+Content-Type: application/json
+
+{"address":"address/address","tenantId":"b93de46b-c170-4f8d-a606-9c24c7061945"}
+
+###
+
+GET http://localhost:8080/reservations/9233c6ea-2761-42df-aff6-783f42c029cb
+
+###
+
+PUT http://localhost:8080/reservations/reserve
+Content-Type: application/json
+
+{"reservationId":"ac541fb1-dce0-48fd-b77d-6e35638cf6c0","tenantId":"a9a4a47f-61f3-4c77-8e1d-94d2e46b6d8d"}
+###
+
+PUT http://localhost:8080/reservations/reserve
+Content-Type: application/json
+
+{"reservationId":"8d52f0fb-6ad9-4bcb-ba3d-38cfb1f5e796","tenantId":"7b30f652-2358-4f96-953c-0ad8283a2fae"}
+
+###
